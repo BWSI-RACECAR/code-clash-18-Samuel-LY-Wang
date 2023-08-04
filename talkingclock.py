@@ -26,7 +26,7 @@ Input: 12:05  Output: It's twelve oh five pm
 
 teens = {11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen", 19: "nineteen"}
 
-nonteens = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eigh", 9: "nine", 20: "twenty", 30: "thirty", 40: "fourty", 50: "fifty"}
+nonteens = {0: "", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eigh", 9: "nine", 20: "twenty", 30: "thirty", 40: "fourty", 50: "fifty"}
 
 def toString(num, isminute):
   if num == 0:
@@ -42,7 +42,7 @@ class Solution:
     def ClockTalker(self, input_time):
       hour=10*int(input_time[0])+int(input_time[1])
       minute=10*int(input_time[3])+int(input_time[4])
-      ispm=(hour>=12 or (hour==0 and minute==0))
+      ispm=hour>=12
       if hour>12:
         hour -= 12
       elif hour == 0:
