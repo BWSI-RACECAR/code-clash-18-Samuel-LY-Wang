@@ -56,7 +56,10 @@ class Solution:
       if minute == 0:
         return ("It's "+toString(hour, False)+" "+string)
       if hour < 10:
-        return ("It's"+toString(hour, False)+" "+toString(minute, True)+" "+string)
+        if minute%10 == 0:
+          return ("It's"+toString(hour, False)+" "+toString(minute, True)+string)
+        else:
+          return ("It's"+toString(hour, False)+" "+toString(minute, True)+" "+string)
       return ("It's "+toString(hour, False)+" "+toString(minute, True)+" "+string)
 
 def main():
