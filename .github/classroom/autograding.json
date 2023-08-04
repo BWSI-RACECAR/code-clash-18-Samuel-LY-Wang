@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Test1",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "12:00",
+      "output": "It's twelve pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test2",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "23:59",
+      "output": "It's eleven fifty nine pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test3",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "12:05",
+      "output": "It's twelve oh five pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test4",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "23:13",
+      "output": "It's eleven thirteen pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test5",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "00:00",
+      "output": "It's twelve am",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test6",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "01:30",
+      "output": "It's one thirty am",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test7",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "14:01",
+      "output": "It's two oh one pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test8",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "20:29",
+      "output": "It's eight twenty nine pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test9",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "21:10",
+      "output": "It's nine ten pm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Test10",
+      "setup": "",
+      "run": "python3 talkingclock.py",
+      "input": "01:13",
+      "output": "It's one thirteen am",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
